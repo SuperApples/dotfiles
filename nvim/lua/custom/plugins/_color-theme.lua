@@ -1,10 +1,13 @@
 return {
 	{
-		"rose-pine/neovim",
+		"rebelot/kanagawa.nvim",
 		priority = 1000,
 
 		init = function()
-			vim.cmd.colorscheme("rose-pine-dawn")
+			vim.cmd.colorscheme("kanagawa")
 		end,
+	},
+	{
+		"rose-pine/neovim",
 	},
 }

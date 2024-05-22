@@ -4,7 +4,9 @@ end
 
 -- NOTE: Look in kickstart/which-key to set high level options
 
+-- INSERT MODE
 vim.keymap.set("i", "jk", "<ESC>")
+vim.keymap.set("i", "<C-BS>", "<C-w>")
 
 -- NAVIGATION
 vim.keymap.set("n", "j", "gj") -- Move visually (skips no lines in word wrap mode)
@@ -20,6 +22,10 @@ map("bn", ":enew<CR>", "New")
 map("bq", ":bdelete<CR>", "Quit")
 map("bb", ":bn<CR>", "Next")
 map("bp", ":bp<CR>", "Previous")
+
+-- WINDOW
+map("ww", ":vsplit<CR>", "Split Vertical")
+map("wh", ":split<CR>", "Split Horizontal")
 
 -- ETC
 map("z", ":ZenMode<CR>", "zen mode")
