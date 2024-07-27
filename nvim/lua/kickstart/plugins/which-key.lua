@@ -22,9 +22,11 @@ return {
 
 			-- Document existing key chains
 			require("which-key").register({
-				["<leader>f"] = { name = "file", _ = "which_key_ignore" },
-				["<leader>b"] = { name = "buffer", _ = "which_key_ignore" },
-				["<leader>s"] = { name = "search", _ = "which_key_ignore" },
+				["<leader>f"] = { name = "FILE", _ = "which_key_ignore" },
+				["<leader>b"] = { name = "BUFFER", _ = "which_key_ignore" },
+				["<leader>s"] = { name = "SEARCH", _ = "which_key_ignore" },
+				["<leader>w"] = { name = "WINDOW", _ = "which_key_ignore" },
+				["<leader>z"] = { name = "WRITING UTILS", _ = "which_key_ignore" },
 			})
 			-- visual mode
 			-- require("which-key").register({

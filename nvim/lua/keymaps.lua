@@ -24,10 +24,12 @@ map("bb", ":bn<CR>", "Next")
 map("bp", ":bp<CR>", "Previous")
 
 -- WINDOW
-map("ww", ":vsplit<CR>", "Split Vertical")
-map("wh", ":split<CR>", "Split Horizontal")
+map("w/", ":vsplit<CR>", "Split Vertical")
+map("w-", ":split<CR>", "Split Horizontal")
+map("wd", ":close<CR>", "Close Window")
 
--- ETC
-map("z", ":ZenMode<CR>", "zen mode")
+-- WRITING
+map("zz", ":ZenMode<CR>", "zen mode")
+map("zc", ":!wc -w %<CR>", "word count")
 
 map("T", ":lua require('custom/scripts/theme-toggle').toggle_theme()<CR>", "theme")
