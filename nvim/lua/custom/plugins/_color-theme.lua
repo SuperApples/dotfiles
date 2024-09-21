@@ -8,6 +8,6 @@ return {
 		end,
 	},
 	{
-		"rose-pine/neovim",
+		"catppuccin/nvim",
 	},
 }

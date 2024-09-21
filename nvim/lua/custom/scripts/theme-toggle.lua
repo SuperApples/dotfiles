@@ -1,8 +1,8 @@
 local M = {}
 
 local themes = {
-	"kanagawa",
-	"rose-pine-dawn",
+	"kanagawa-wave",
+	"catppuccin-latte",
 }
 
 local current_theme_index = 1
