@@ -134,10 +134,10 @@ SYSTEM_PATHS=(
 CUSTOM_PATHS=(
     "/usr/games"
     "/usr/local/games"
+    "/home/brett/.local/bin"
 
     "$HOME/GitClones/Odin"
     "$HOME/GitClones/valgrind"
-    "$HOME/GitClones/freetype-2.13.3"
 )
 
 export PATH=$(IFS=:; echo "${CUSTOM_PATHS[*]}:${SYSTEM_PATHS[*]}")
