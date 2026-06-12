@@ -12,10 +12,10 @@ return {
 					default_direction = "prefer_left",
 				},
 				autojump = true,
-				open_automatic = true,
+				open_automatic = false,
 				nerd_font = false,
 				icons = {
-					Interface = "-", -- In Markdown, this is what's used
+					Interface = "", -- In Markdown, this is what's used
 					Class = "",
 					Constructor = "",
 					Enum = "",
@@ -25,7 +25,7 @@ return {
 					Struct = "",
 				},
 			})
-			vim.keymap.set("n", "<leader>wa", "<cmd>AerialToggle!<CR>")
+			vim.keymap.set("n", "<leader>zo", "<cmd>AerialToggle!<CR>")
 		end,
 	},
 }

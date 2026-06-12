@@ -138,6 +138,7 @@ CUSTOM_PATHS=(
 
     "$HOME/GitClones/Odin"
     "$HOME/GitClones/valgrind"
+    "$HOME/GitClones/appimagetool"
 )
 
 export PATH=$(IFS=:; echo "${CUSTOM_PATHS[*]}:${SYSTEM_PATHS[*]}")
@@ -146,3 +147,11 @@ export PATH=$(IFS=:; echo "${CUSTOM_PATHS[*]}:${SYSTEM_PATHS[*]}")
 
 # Input line colours
 PS1="\n\[$(tput bold)\]\[$(tput setaf 2)\]\u\[$(tput setaf 7)\]@\h \[$(tput sgr0)\]\[$(tput setaf 6)\][\W] \\$ \[$(tput sgr0)\]"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+# In theory, disables notifications
+alias notify-send="true"
